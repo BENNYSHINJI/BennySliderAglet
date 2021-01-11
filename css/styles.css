@@ -1,0 +1,606 @@
+body /*format page background color and layout*/
+{
+	background-color:black !important;
+	overflow-y:hidden;
+	overflow-x: hidden; 
+}
+
+
+.navbar /*format Navigatin background color and layout*/
+{
+  background-color: black !important;
+}
+
+/*format page links color*/
+.navbar-dark .navbar-nav .nav-link
+{
+	color: white;
+}
+
+
+
+/******** on hover unerline navigation links  *****************/
+.nav-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  position: relative;
+  background: #fff;
+  transition: width 0.3s ease 0s, right 0.3s ease 0s;
+  width: 0;
+}
+.nav-link:hover:after { 
+  width: 100%; 
+   
+}
+
+/*Navigation baer alignment*/
+
+.navigation
+{
+margin: 0px;
+}
+
+/***************Start Formatting Slider content and wording*****/
+h4
+{
+	color: white;
+}
+
+
+p{
+	color: #fff;
+}
+
+
+.heading
+{
+font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+font-weight: bolder;
+margin-left: 10%;
+}
+
+
+.sub_heading
+{
+ 
+font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+margin-top: 12%;
+color: #585858;
+}
+
+#sub_heading1
+{
+  margin-top: 30px;
+  margin-left: -33%;
+}
+#sub_heading2
+{
+  margin-left: -73%
+}
+
+#sub_heading3
+{
+  margin-left: -55%;
+  margin-top: 30px;
+}
+
+#sub_heading4
+{
+  margin-left: -35%;
+  margin-top: 30px;
+}
+
+#sub_heading5
+{
+  margin-left: -43%;
+  margin-top: 30px;
+}
+
+
+
+#sub_heading11
+{
+  margin-left: -41%;
+  margin-top: 30px;
+}
+#sub_heading12
+{
+  margin-left: -63%;
+  margin-top: 30px;
+}
+
+/***************End Formatting Slider and wording content *****/
+
+
+/***Start Formatting contact us Page contetnt***/
+#about-me
+{
+	width: 180px;
+	margin-top: 0px;
+	margin-left: 50px;
+}
+#hello
+   {
+   width: 100%;
+   height: auto;
+   }
+
+#hello-text
+{
+font-size: 188px;
+font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+font-weight: bolder;
+color: #202020;
+z-index: 5;
+  
+}
+
+#hello-row
+{
+	position: absolute;
+	top: 20%;
+  left: 19%;
+  z-index: 10;
+	
+}
+
+i{
+	margin-left: 15px;
+}
+
+#social-media
+{
+  margin-left: 50px;
+  color: #fff;
+}
+
+/***End Formatting contact us Page content***/
+
+
+.video_content
+{
+  position: absolute;
+  top: 60%;
+}
+
+
+video
+{
+  margin-right: 0px;
+  cursor: pointer;
+}
+
+
+
+/**************************************************
+*
+*	Container setup for slider
+*
+**************************************************/
+
+#horiz_container_outer
+{
+	width:98%;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	position:relative;
+	height:560px;
+	margin:0px;
+	
+	
+}
+
+#horiz_container
+{
+	width:6000px;
+	margin:1px;
+	padding:0px;
+	height:550px;
+}
+
+#horiz_container div
+{
+	margin:0px; padding:0px;
+	float:left;
+}
+
+#horiz_container_inner
+{
+	
+	margin-left:0px;
+	margin-right: 0px
+}
+
+#horiz_container div
+{
+	list-style:none;
+	display: inline-flex;
+	margin-left: 0px;
+}
+
+
+#horiz_container div
+{
+	padding-right:0px;
+}
+
+
+
+
+
+
+/**************************************************
+*
+*	Scrolling formating on home page slider
+*
+**************************************************/
+
+#scrollbar /* scrollbar formatting on slider**/
+{ 
+    position:relative; 
+    width:815px; height:12px;
+    display:block;
+    font-size:1px;
+    top:85%;
+    margin:0px auto;
+}
+
+#track /* scrollbar track formatting on slider**/
+{ 
+    position:absolute; left:280px; top:0;
+    width:315px;
+    background: #4a4a4a;
+    -webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	height: 3px;
+}
+
+/* scrollbar dragbar formatting on slider**/
+#dragBar 
+{
+    position:absolute; left:0px; top:0px;
+    width:7px; height:2px; /*dragbar size*/
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+  border-radius: 10px;
+background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.39, rgb(192,192,192)),
+    color-stop(0.7, rgb(192,192,192))
+
+    
+
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    rgb(192,192,192) 39%,
+    rgb(192,192,192) 70%
+);
+
+}  
+  
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) /*****mobile devices portrait***/
+{
+
+
+  body
+   {
+overflow-y: auto;
+overflow-x: auto;
+
+  }
+  
+  #hello-text /*Hello text format on contact page*/
+  {
+    margin-top: 120px;
+    margin-left: 0px;
+    font-size: 100px
+  }
+
+  #about-me /*About me text format on contact page*/
+  {
+    margin-top: 0px;
+    font-size: 14px;
+  }
+
+  #hello
+  {
+    height: 400px;
+  }
+
+  #hello-row /*Hello text row format on contact page*/
+{
+	position: relative;
+	top: 0%;
+  left: 19%;
+  z-index: 10;
+	
+}
+
+/*Picture formatting on contact page*/
+  #picture-container
+  {
+    height: 42%;
+    position: relative;;
+    margin-top: -200px;
+    }
+
+    /*Description text format on pictures on home page*/
+  #content1,#content2,#content3, #content4, #content5, #content11, #content12
+{
+  height: 40px;
+  z-index: 5;
+  width: 220px;
+  position: relative;
+  top:-40%;
+  left:1%;
+}
+
+
+/***Start Formatting Home Page content***/
+  .heading
+  {
+    position: relative;
+    top: -100%;
+    left: 23%;
+    font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+    font-size: 12px;
+    
+  }
+
+  .sub_heading
+  {
+    
+  font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+   font-size: 10px;
+   color: #fff;
+  }
+ 
+  #sub_heading1
+  {
+    margin-top: -20px;
+    position: relative;
+    left: 15%;
+  }
+
+  #sub_heading2
+  {
+    margin-top: -20px;
+    position: relative;
+    left: 60%;
+  }
+
+  #sub_heading3,#sub_heading4,#sub_heading5,#sub_heading11
+  {
+    margin-top: -20px;
+    position: relative;
+    left: 10%;
+
+  }
+
+  #sub_heading12
+  {
+    margin-top: -20px;
+    position: relative;
+    left: 40%;
+
+  }
+
+
+
+  
+/*Aligning link text on home page*/
+  .nav-item
+{
+  margin-left: 0px;
+}
+  
+
+
+
+#horiz_container_outer
+{
+	
+  margin-left: 0px;
+
+  overflow: scroll;
+	
+}
+
+#horiz_container
+{
+	width: max-content;
+  flex-direction: column;
+  margin-left:0px ;
+  
+}
+
+.item
+{
+
+  width:100%;
+  height: 210px;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-left: -70px;
+}
+
+video
+{
+  margin-top: 0px;
+  height: 200px;
+  width: 345px;
+  margin-left: 0px;
+}
+
+
+#horiz_container_inner
+{
+	
+	margin-left:0px;
+	
+}
+
+#scrollbar
+{
+  visibility: hidden;
+}
+
+#track
+{
+  visibility: hidden;
+}
+
+#dragBar
+{
+  visibility: hidden;
+}
+
+
+
+/******************************Break***************************************/
+
+
+  
+}
+
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 768px) /*****mobile devices landscape***/
+{
+  body
+   {
+overflow-y: auto;
+overflow-x: auto;
+
+  }
+  #about-me
+  {
+    margin-top: 185px;
+    font-size: 12px;
+  }
+
+  #hello-text
+  {
+    font-size: 100px;
+    margin-top: 120px;
+
+  }
+
+  #horiz_container_outer
+  {
+    width: 160%;
+    overflow: scroll;
+    
+  }
+
+
+#horiz_container
+{
+
+  overflow: scroll;
+}
+
+#horiz_container_inner
+{
+  overflow: scroll;
+}
+
+
+#hello-row
+{
+	position: relative;
+	top: 0%;
+  left: 19%;
+  z-index: 10;
+	
+}
+
+  #picture-container
+  {
+    height: 42%;
+    position: relative;;
+    margin-top: -200px;
+    }
+
+
+    #text-container
+    {
+      position: relative;
+      margin-top: -150px;
+    }
+
+    #about-me
+    {
+      position: relative;
+      margin-top: 0px;
+    }
+
+
+    /******************************Break***************************************/
+
+}
+
+
+@media only screen and (min-device-width : 769px) and (max-device-width : 1024px) /*****Tablets****/
+{
+  #hello-text
+  {
+    margin-top: 0px;
+    margin-left: 118px;
+    font-size: 100px;
+  }
+
+  #about-me
+  {
+    margin-top: 240px;
+    font-size: 12px;
+  }
+
+  #hello
+  {
+    height: 400px;
+  }
+
+  #picture-container
+  {
+    height: 42%;
+  }
+
+/******************************Break***************************************/
+
+}
+
+
+
+@media only screen  and (min-width : 1224px) /***laptop and desktop**/
+{ 
+    #hello-text
+    {
+      margin-top: 0px;
+      margin-left: -10px;
+      font-size: 188px;
+    }
+
+
+    #about-me
+    {
+      margin-top: 280px;
+      font-size: 14px;
+      width: 40%;
+    }
+
+/******************************Break***************************************/
+
+  }
+
+
